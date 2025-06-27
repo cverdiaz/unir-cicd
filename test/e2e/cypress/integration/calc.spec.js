@@ -2,7 +2,7 @@
 
 context('Calc', () => {
   beforeEach(() => {
-    cy.visit('http://calc-web/')
+    cy.visit('http://localhost/')
   })
 
   it('get the title', () => {

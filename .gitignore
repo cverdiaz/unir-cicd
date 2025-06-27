@@ -17,3 +17,7 @@ __pycache__
 
 sonar/
 .scannerwork/
+
+/node_modules
+cypress/screenshots/
+cypress/videos/
