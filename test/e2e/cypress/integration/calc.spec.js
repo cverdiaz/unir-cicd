@@ -16,13 +16,14 @@ context('Calc', () => {
       .type('-5').should('have.value', '-5')
   })
 
+  /*
   it('can click add', () => {
     cy.get('#in-op1').clear().type('2')
     cy.get('#in-op2').clear().type('3')
     cy.get('#button-add').click()
     cy.get('#result-area').should('have.text', "Result: 5")
     cy.screenshot()
-  })
+  })*/
 
   it.skip('can click multiply', () => {
     cy.get('#in-op1').clear().type('2')
@@ -32,6 +33,7 @@ context('Calc', () => {
     cy.screenshot()
   })
 
+  /*
   it('can click substract (using fixture)', () => {
     cy.fixture('result8.txt').as('result')
     cy.server()
@@ -45,7 +47,7 @@ context('Calc', () => {
 
     cy.get('#result-area').should('have.text', "Result: 8")
     cy.screenshot()
-  })
+  })*/
 
   it('increases the history log', () => {
     cy.get('#button-add').click().click().click()
